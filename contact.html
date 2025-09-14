@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Second Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --main: #00c853;
+      --nav-bg: #181818;
+      --nav-active: #242424;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom, #101010 0%, #23272f 100%);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      position: relative;
+    }
+    nav {
+      width: 100%;
+      background: var(--nav-bg);
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      padding: 22px 0 18px 0;
+      position: sticky;
+      top: 0;
+      z-index: 99;
+      box-shadow: 0 2px 24px #0002;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      padding: 9px 20px 9px 20px;
+      border-radius: 8px;
+      font-size: 1.06rem;
+      transition: background 0.19s, color 0.19s;
+    }
+    nav a.active, nav a:hover {
+      background: var(--nav-active);
+      color: var(--main);
+    }
+    .container {
+      width: 100%;
+      max-width: 540px;
+      margin: 0 auto;
+      padding: 54px 16px 0 16px;
+      text-align: center;
+      flex: 1 1 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      margin-bottom: 17px;
+      letter-spacing: -0.01em;
+      background: linear-gradient(90deg, var(--main), #62e288 70%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 2px 12px #10ef7148);
+    }
+    p.description {
+      font-size: 1.11rem;
+      color: #c4c8d1;
+      margin-bottom: 32px;
+      margin-top: 2px;
+      line-height: 1.8;
+      font-weight: 400;
+    }
+    .contact-info {
+      font-size: 1.09rem;
+      color: #fff;
+      background: #191e24;
+      padding: 28px 20px 20px 20px;
+      border-radius: 11px;
+      box-shadow: 0 2px 16px #10ef7130;
+      margin-bottom: 30px;
+      width: 100%;
+      max-width: 420px;
+      text-align: left;
+    }
+    .contact-info strong { color: var(--main); }
+    footer {
+      width: 100%;
+      text-align: center;
+      padding: 16px 0 20px 0;
+      color: #7e8492;
+      font-size: 0.98rem;
+      background: none;
+      letter-spacing: 0.01em;
+      margin-top: auto;
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .container {
+        padding-top: 34px;
+      }
+      .contact-info {
+        font-size: 0.99rem;
+        padding: 22px 10px 13px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="contact.html" class="active">Contact</a>
+    <a href="privacy.html">Privacy</a>
+  </nav>
+  <div class="container">
+    <h1>Contact Us</h1>
+    <p class="description">
+      We'd love to hear from you!<br>
+      Reach out if you have any question, suggestion, or partnership inquiry.
+    </p>
+    <div class="contact-info">
+      <div><strong>Email:</strong> lengocminh0707@gmail.com</div>
+    </div>
+  </div>
+  <footer>
+    © Copyright Second Game. All Rights Reserved
+  </footer>
+</body>
+</html>
